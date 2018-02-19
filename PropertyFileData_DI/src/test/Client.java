@@ -12,7 +12,7 @@ public class Client {
 public static void main(String[] args) {
 	ApplicationContext ap= new ClassPathXmlApplicationContext("resources/spring.xml");
 
-	
+	///////////////
 	
 	CP cp=(CP)ap.getBean("cp");
 	cp.createConnection();
