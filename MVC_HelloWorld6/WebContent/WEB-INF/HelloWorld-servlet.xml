@@ -22,7 +22,7 @@
 </property>
 </bean>
 <bean id="hc" class="controller.HelloController">
-<property name="viewName" value="success"></property>
+<property name="viewName" value="output"></property>
 </bean>
 <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
 <property name="prefix" value="/"></property>
