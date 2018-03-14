@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+
+"http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+<beans>
+<bean class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+<property name="mappings">
+<props>
+<prop key="/empsave.htm">Empcrud</prop>
+<prop key="/empupdate.htm">Empcrud</prop>
+</props>
+</property>
+</bean>
+<bean id="Empcrud" class="controller.EmpCrudController">
+<property name="methodNameResolver">
+<bean class="org.springframework.web.servlet.mvc.multiaction.InternalPathMethodNameResolver">
+<property name="prefix" value="for"></property>
+<property name="suffix" value="s"></property>
+</bean>
+</property>
+
+</bean>
+<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+<property name="prefix" value="/"></property>
+<property name="suffix" value=".jsp"></property>
+</bean>
+</beans>
