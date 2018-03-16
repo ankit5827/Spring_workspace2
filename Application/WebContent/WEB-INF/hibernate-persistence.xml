@@ -36,6 +36,10 @@
 		class="org.springframework.orm.hibernate4.HibernateTransactionManager"
 		p:sessionFactory-ref="sessionFactory">
 	</bean>
+	
+	
+	
+	
 	<!-- enable tx annotation suuport -->
 	<tx:annotation-driven />
 

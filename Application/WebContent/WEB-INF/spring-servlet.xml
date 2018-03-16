@@ -15,8 +15,10 @@
 		p:viewClass="org.springframework.web.servlet.view.JstlView" />
 
 <import resource="classpath:/hibernate-persistence.xml"/>
-<mvc:resources location="/asset/css" mapping="/asset/css/**"/>
+
+
+<!-- <mvc:resources location="/asset/css" mapping="/asset/css/**"/>
 <mvc:resources location="/asset/fonts" mapping="/asset/fonts/**"/>
 <mvc:resources location="/asset/images" mapping="/asset/images/**"/>
-<mvc:resources location="/asset/js" mapping="/asset/js/**"/>
+<mvc:resources location="/asset/js" mapping="/asset/js/**"/> -->
 </beans>
