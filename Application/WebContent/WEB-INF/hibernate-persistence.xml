@@ -8,8 +8,10 @@
 
 	<!-- supply loc -->
 	<context:property-placeholder 
-	location="classpath:/database.properties" />
-	<!-- DS bean -->
+	
+	location="WEB-INF/database.properties" />
+
+ 	<!-- DS bean -->
 	<bean id="dataSource" 
 	class="org.apache.commons.dbcp.BasicDataSource"
 		p:driverClassName="${jdbc.driver}" p:url="${jdbc.url}" 
