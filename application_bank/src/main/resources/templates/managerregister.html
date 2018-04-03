@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1"/>
+<title>Register</title>
+</head>
+<body>
+    
+    <form th:action="@{/managersuccess}" th:object="${manager}" method="POST">
+ 
+   first name <input type="text" th:field="*{firstname}" />
+   last name <input type="text" th:field="*{lastname}" />
+    mobileno  <input type="text" th:field="*{mobileno}" />
+   email <input type="text" th:field="*{email}" />
+    password<input type="text" th:field="*{password}" />
+   address <input type="text" th:field="*{address}" />
+   birthdate <input type="text" th:field="*{birthdate}" />
+   
+                  
+                  
+                  
+                  <input type="radio" th:field="*{gender}" th:text="male" th:value="Male" />
+                  <input type="radio" th:field="*{gender}" th:text="female" th:value="female" />
+  <!--  Bank  <select th:field="*{bankid}">
+             <option th:each="dropDownItem : ${bank}"
+                             th:value="${Bank.id}"
+                             th:text="${Bank.name}" />
+         </select>
+   Branch
+    <select th:field="*{branchid}">
+             <option th:each="dropDownItem : ${branch}"
+                             th:value="${Branch.id}"
+                             th:text="${Branch.name}" />
+         </select>
+                   -->
+                  
+                  
+                  
+                 
+    
+    <input type="submit" value="Submit" />
+                 
+      </form> 
+</body>
+</html>
