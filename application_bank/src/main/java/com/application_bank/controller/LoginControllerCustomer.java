@@ -28,7 +28,7 @@ public class LoginControllerCustomer {
 		return "login";
 	}
 	
-	@RequestMapping(value="/customerhome",method = { RequestMethod.PUT, RequestMethod.POST })
+	@RequestMapping(value="/customerhome" , method = RequestMethod.POST )
 	public String byIdAndPassword (Customer customer,Model model)
 	{
 		System.out.println(customer);
