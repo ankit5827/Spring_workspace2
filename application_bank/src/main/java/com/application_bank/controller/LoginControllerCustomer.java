@@ -29,9 +29,9 @@ public class LoginControllerCustomer {
 	}
 	
 	@RequestMapping(value="/customerhome",method = { RequestMethod.PUT, RequestMethod.POST })
-	public String byIdAndPassword ( @PathVariable(value="customerid")Integer customerid,
-			@PathVariable(value="password")String password)
+	public String byIdAndPassword (Customer customer,Model model)
 	{
+		System.out.println(customer);
 		Customer c1= (Customer) loginService.findAllByCustomeridAndPassword(customerid,password);
 		System.out.println(c1);
 		
